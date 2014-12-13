@@ -19,24 +19,16 @@ body {
   line-height: 95px;
   text-align: center;
   width: 95px;
-}
-.spin {
-  cursor: pointer;
-  transform-style: preserve-3d;
-}
-.spin:hover {
-    animation: spin 5s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+
+  transition-property: opacity;
+  transition-duration: 3s;
+  transition-timing-function: linear;
 }
 .box-1 {
   transform: rotate(20deg);
+  transition-property: opacity;
+  transition-duration: 3s;
+  transition-timing-function: linear;
 }
 .box-2 {
   transform: rotate(-55deg);
