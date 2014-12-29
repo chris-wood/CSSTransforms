@@ -19,14 +19,18 @@ body {
   text-align: center;
   width: 95px;
 
-  -webkit-transition: transform ease-in-out 2s;
-  -moz-transition: transform ease-in-out 2s;
-  -o-transition: transform ease-in-out 2s;
-  transition: transform ease-in-out 2s;
+  transform:scale(0.8);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
-.box-1 {
-  transform: rotate(20deg);
+.box-1:hover {
+  transform: rotate(20deg) scale(1.0);
+  transition-duration: 2s;
+  transition-timing-function: ease;
 }
-.box-2 {
-  transform: rotate(-55deg);
+.box-2:hover {
+  transform: rotate(-55deg) scale(1.0);
+  transition-duration: 2s;
+  transition-timing-function: ease;
 }
